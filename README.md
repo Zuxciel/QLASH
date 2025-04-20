@@ -10,18 +10,26 @@
 
 QLASH is a revolutionary encryption system designed for the post-quantum era, leveraging advanced mathematical lattices with quantum-resistant properties. This implementation provides robust security against both conventional and quantum computing attacks through its unique entanglement-based approach.
 
-```
-🚀 Ultra-fast encryption with adaptive security mechanisms
-🧠 Self-optimizing parameters for optimal performance-security balance
-⚙️ Hardware-accelerated with SIMD instruction detection
-🧬 Quantum-inspired entanglement model for data protection
-```
+- 🚀 Ultra-fast encryption with adaptive security mechanisms
+- 🧠 Self-optimizing parameters for optimal performance-security balance
+- ⚙️ Hardware-accelerated with SIMD instruction detection
+- 🧬 Quantum-inspired entanglement model for data protection
 
 ## 📊 Performance
 
-[https://img.shields.io/badge/License-MIT-green?style=for-the-badge](https://storage.googleapis.com/xai-storage-grok-artifact-outputs/04bbd14b-c4d5-4bb6-b383-10a5fff6e6bc.png?Expires=1745161701&GoogleAccessId=grok-in-xai-cache%40enterprise-api-425510.iam.gserviceaccount.com&Signature=ZWqyoEgr42PzEBJKzaQSFW8vGylvvzxf6B%2FSPeVtQ602cnw7BRq6ayLZyqqsBXHIxS%2Fb9XMEyHime4i2ieqngkDxcxVej5Fsu1Ej1Ylv4zkOwpf3PZgPOCvdgeMZS%2Bwxm%2FCogy%2BzYCRfRBQjjliAZRgbEwUs0qHukiA1WUHryjYpx%2Baq7qfscMZWg7EBSZMfWV5Qp6WObUQTsyh%2F9g03oFm1CXRWZAlNUf00BjUlEHh5LAAgsbtGXqpY%2BGHRIBVq%2FxcAcJ%2BM6JjZcUtx6A3nG6lCooS6oYLBC6Si65eiCzlnRTwqvD2Gi%2FVRpXt0ERnzHC0wG79gwje6Hiz1NIaNQA%3D%3D))
+![Performance Chart](https://img.shields.io/badge/Performance-Hight_Quality-blue?style=for-the-badge)
+## 📊 Benchmark (File 10MB)
 
-*Performance measured on AMD Ryzen 9 5950X, will vary by system configuration*
+| Security | Time      | Throughput | Expansion |
+|----------|-----------|------------|-----------|
+| 128-bit  | 350ms     | 28.29 MB/s | 1.01x     |
+| 192-bit  | 369ms     | 26.82 MB/s | 1.01x     |
+| 256-bit  | 420ms     | 23.57 MB/s | 1.01x     |
+| 512-bit  | 525ms     | 18.84 MB/s | 1.02x     |
+| 1024-bit | 1.25s     | 7.88 MB/s  | 1.04x     |
+
+
+*Performance measured on AMD Radeon RX 580, will vary by system configuration*
 
 ## 🛠️ Core Technologies
 
@@ -107,14 +115,14 @@ QLASH isn't just another encryption tool - it's designed from the ground up with
 
 ```
 ┌─────────────────┐       ┌─────────────────┐       ┌────────────────┐
-│  Quantum Seed   │──────▶│   Lattice Key  │──────▶│ Entangled State │
-│  Generation     │       │   Generation    │       │    Creation    │
+│  Quantum Seed   │──────▶│   Lattice Key   │──────▶│ Entangled State │
+│  Generation     │       │   Generation    │       │    Creation     │
 └─────────────────┘       └─────────────────┘       └────────────────┘
          │                        │                         │
          ▼                        ▼                         ▼
 ┌─────────────────┐       ┌─────────────────┐       ┌────────────────┐
-│    Adaptive     │◀─────▶│  Superposition │◀─────▶│  Block-Level  │
-│    Security     │       │     Patterns    │       │   Encryption   │
+│    Adaptive     │◀─────▶│  Superposition  │◀─────▶│  Block-Level   │
+│    Security     │       │     Patterns    │       │   Encryption    │
 └─────────────────┘       └─────────────────┘       └────────────────┘
                                    │
                                    ▼
@@ -129,7 +137,7 @@ QLASH isn't just another encryption tool - it's designed from the ground up with
 QLASH can be fine-tuned through parameter adjustments:
 
 ```go
-customParams := QLASHParameters{
+customParams := qlash.Parameters{
     LatticeDimension:   384,         // Custom dimension
     EntanglementFactor: 0.85,        // Correlation strength
     SuperpositionDepth: 4,           // Security layers
@@ -166,5 +174,5 @@ QLASH is based on cutting-edge research in post-quantum cryptography. For theore
 
 <div align="center">
   <p>Built with ❤️ for a quantum-safe future</p>
-  <p>© 2025 Your Organization</p>
+  <p>© 2025 Zuxciel</p>
 </div>
